@@ -24,3 +24,18 @@ To view the project locally:
    ```sh
    git clone https://github.com/rubenayla/3d-filament-tier-list.git
    cd 3d-filament-tier-list
+   ```
+2. Open `index.html` in your browser to view the website.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, feel free to submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- **Zack Freedman** for the amazing video: [The 3D Filament Tier List! Which Should YOU Use?](https://youtu.be/weeG9yOp3i4?t=0)
+
