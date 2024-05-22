@@ -44,6 +44,10 @@
         .filament:hover .properties {
             display: block;
         }
+        .link {
+            margin-top: 10px;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -68,8 +72,13 @@
                     const filamentDiv = document.createElement('div');
                     filamentDiv.classList.add('filament');
                     filamentDiv.innerHTML = `
-                        ${filament.name}
-                        <div class="properties">${filament.properties}</div>
+                        <strong>${filament.name}</strong>
+                        <div class="properties">
+                            <p><strong>Description:</strong> ${filament.description}</p>
+                            <p><strong>Pros:</strong> ${filament.pros}</p>
+                            <p><strong>Cons:</strong> ${filament.cons}</p>
+                            <a class="link" href="${filament.link}" target="_blank">Watch Video</a>
+                        </div>
                     `;
                     tierDiv.appendChild(filamentDiv);
                 });
