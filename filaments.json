@@ -2,11 +2,361 @@
     {
         "name": "PLA",
         "tier": "A",
-        "properties": "Easy to print, cheap, available in many colors, stiff, good tensile strength, susceptible to UV light, and shatters when dropped."
+        "description": "PLA is super easy to print, cheap, and available in many colors. It's the stiffest non-composite thermoplastic and has excellent tensile strength.",
+        "pros": "Easy to print, cheap, stiff, excellent tensile strength.",
+        "cons": "Susceptible to UV light, shatters when dropped, can't be sanded or glued well.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=174"
     },
     {
         "name": "Silk PLA",
         "tier": "B",
-        "properties": "Shiny, weaker than regular PLA, easier to remove supports, can puff up during printing."
+        "description": "Silk PLA has a special additive that makes your prints shiny. It's more metallic than actual metal but weakens the print.",
+        "pros": "Shiny, easier to remove supports, aesthetically pleasing.",
+        "cons": "Weakens the print, can puff up during printing.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=240"
+    },
+    {
+        "name": "Carbon Fiber PLA",
+        "tier": "S",
+        "description": "Carbon Fiber PLA sharpens details, stabilizes the filament as it cools, and makes the end product stiffer but more brittle.",
+        "pros": "Sharpens details, stabilizes cooling, crisp details, low shrinkage, matte finish.",
+        "cons": "More brittle, requires a hardened steel nozzle.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=346"
+    },
+    {
+        "name": "Metal-Filled PLA",
+        "tier": "F",
+        "description": "Metal-filled PLA contains metal shavings that make prints heavier and adds some properties like patina and magnetism.",
+        "pros": "Heavier, develops patina, magnetic (if iron-filled).",
+        "cons": "Extremely brittle, expensive, weak.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=405"
+    },
+    {
+        "name": "Wood PLA",
+        "tier": "B",
+        "description": "Wood PLA is plastic mixed with sawdust. The quality varies, and it feels like hardwood when finished.",
+        "pros": "Feels like hardwood, convincing wood grain effect with varnish.",
+        "cons": "Weaker, absorbs humidity, difficult to print.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=446"
+    },
+    {
+        "name": "Tough PLA",
+        "tier": "S",
+        "description": "Tough PLA is a combination of PLA and polybutene terephthalate (PBT). It resists higher temperatures and handles impacts better.",
+        "pros": "Higher temperature resistance, impact-resistant, doesn't shatter.",
+        "cons": "None significant for light-duty projects.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=554"
+    },
+    {
+        "name": "Matte PLA",
+        "tier": "B",
+        "description": "Matte PLA contains plant pulp, giving prints a springy satin surface. It can be sanded, painted, and carved.",
+        "pros": "Springy satin surface, can be sanded, painted, and carved.",
+        "cons": "Absorbs humidity quickly, semi-flexible, can jam in the extruder.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=610"
+    },
+    {
+        "name": "High-Speed PLA",
+        "tier": "S",
+        "description": "High-Speed PLA melts at a lower temperature and has reduced viscosity, allowing for faster printing speeds.",
+        "pros": "Allows for high-speed printing, reduces print time significantly.",
+        "cons": "Softens at lower temperatures, can be problematic in hot climates.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=660"
+    },
+    {
+        "name": "Flex PLA (PCL)",
+        "tier": "B",
+        "description": "Flex PLA (PCL) is a low-temperature printing filament with a waxy consistency, useful for prosthetics and sculptable plastics.",
+        "pros": "Low-temperature printing, can be reshaped with warm water, useful for prosthetics.",
+        "cons": "Translucent waxy consistency, no adhesive sticks to it.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=753"
+    },
+    {
+        "name": "PETG",
+        "tier": "A",
+        "description": "PETG is tougher than PLA, handles higher temperatures, and is more transparent. It has a low coefficient of friction.",
+        "pros": "Tough, handles higher temperatures, transparent, low friction.",
+        "cons": "Poor overhang performance, absorbs water quickly.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=811"
+    },
+    {
+        "name": "Carbon Fiber PETG",
+        "tier": "S",
+        "description": "Carbon Fiber PETG stabilizes molten filament, improving stability and support quality. It has a matte finish and is stiffer than regular PETG.",
+        "pros": "Stabilizes molten filament, improves stability, matte finish.",
+        "cons": "Expensive, limited suppliers.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=878"
+    },
+    {
+        "name": "PCTG",
+        "tier": "S",
+        "description": "PCTG is an improved version of PETG. It is very tough, low-warping, and has almost perfect layer adhesion.",
+        "pros": "Very tough, low-warping, excellent layer adhesion.",
+        "cons": "Expensive, hard to find, difficult to remove supports.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=941"
+    },
+    {
+        "name": "PET",
+        "tier": "B",
+        "description": "PET is stiffer and tougher than PETG, with better resistance to high temperatures. However, it is harder to print.",
+        "pros": "Stiffer and tougher, better high-temperature resistance.",
+        "cons": "Harder to print, worse overhang and warping issues.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1001"
+    },
+    {
+        "name": "CF PET",
+        "tier": "A",
+        "description": "CF PET is easier to print than entry-level PETG and is extremely stiff, making it suitable for high-performance parts.",
+        "pros": "Easy to print, extremely stiff.",
+        "cons": "Expensive, requires a high-performance printer.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1061"
+    },
+    {
+        "name": "PVB",
+        "tier": "C",
+        "description": "PVB is a weaker filament but reveals its true colors when exposed to alcohol, fusing layers together for a smooth finish.",
+        "pros": "Smooth finish with alcohol vapor smoothing.",
+        "cons": "Weaker, fuses together easily, hard to print.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1121"
+    },
+    {
+        "name": "ABS",
+        "tier": "S",
+        "description": "ABS is tough and withstands high temperatures. It can be solvent-welded and vapor-smoothed with acetone.",
+        "pros": "Tough, withstands high temperatures, can be solvent-welded and vapor-smoothed.",
+        "cons": "Warps significantly, off-gases during printing.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1164"
+    },
+    {
+        "name": "ASA",
+        "tier": "A",
+        "description": "ASA is a chemical cousin of ABS but with better UV resistance and less warping. It has a handsome matte surface.",
+        "pros": "Better UV resistance, less warping, matte surface.",
+        "cons": "Off-gases during printing, requires enclosure.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1222"
+    },
+    {
+        "name": "HIPS",
+        "tier": "B",
+        "description": "HIPS is used as support material for ASA or ABS. It is slightly flexible and has low density.",
+        "pros": "Flexible, low density, dissolvable in limonene.",
+        "cons": "Soft and waxy, low bed adhesion.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1282"
+    },
+    {
+        "name": "PA-6 Nylon",
+        "tier": "B",
+        "description": "PA-6 Nylon is exceptionally strong and flexible. It is stable at high temperatures but is hygroscopic and warps easily.",
+        "pros": "High strength, flexible, high-temperature stability.",
+        "cons": "Hygroscopic, warps easily, requires heated chamber.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1322"
+    },
+    {
+        "name": "PA-12 Nylon",
+        "tier": "B",
+        "description": "PA-12 Nylon is stiffer than PA-6 and prints at higher temperatures. It is brittle and warps more than PA-6.",
+        "pros": "Stiffer, higher temperature resistance.",
+        "cons": "More brittle, warps more, expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1372"
+    },
+    {
+        "name": "PA-6 CF Nylon",
+        "tier": "B",
+        "description": "PA-6 CF Nylon is stiffer and warps less than regular nylon but still requires high-end equipment to print properly.",
+        "pros": "Stiffer, reduced warping.",
+        "cons": "Requires high-end equipment, expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1412"
+    },
+    {
+        "name": "PA-12 CF Nylon",
+        "tier": "C",
+        "description": "PA-12 CF Nylon is even stiffer than PA-6 CF but sacrifices some of nylon's low friction properties.",
+        "pros": "Extremely stiff.",
+        "cons": "Sacrifices low friction, very expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1452"
+    },
+    {
+        "name": "Glass-Filled Nylon",
+        "tier": "S",
+        "description": "Glass-Filled Nylon is tough, durable, and resistant to heat, abrasion, and impact. It is easier to print than pure nylon.",
+        "pros": "Extremely tough, durable, heat and abrasion-resistant.",
+        "cons": "Requires high-end printer, very abrasive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1492"
+    },
+    {
+        "name": "Nylon/PETG Alloys",
+        "tier": "C",
+        "description": "Nylon/PETG Alloys combine properties of nylon and PETG but inherit many of their weaknesses, such as warping.",
+        "pros": "Improves PETG's strength.",
+        "cons": "Tends to warp, not as strong as pure nylon.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1537"
+    },
+    {
+        "name": "Polycarbonate (PC)",
+        "tier": "B",
+        "description": "Polycarbonate is very tough and stiff, with a glass-like sheen. It absorbs water quickly and is slow to print.",
+        "pros": "Very tough, stiff, clear.",
+        "cons": "Absorbs water quickly, slow to print, prints at very high temperatures.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1608"
+    },
+    {
+        "name": "CF Polycarbonate",
+        "tier": "A",
+        "description": "CF Polycarbonate is extremely stiff and rough, making it suitable for high-strength applications.",
+        "pros": "Extremely stiff, rough, affordable.",
+        "cons": "Requires high-performance printer, abrasive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1670"
+    },
+    {
+        "name": "PMMA (Acrylic)",
+        "tier": "C",
+        "description": "PMMA is highly transparent and UV resistant, but it is brittle and absorbs water.",
+        "pros": "Highly transparent, UV resistant, can be polished.",
+        "cons": "Brittle, absorbs water, poor bed and layer adhesion.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1735"
+    },
+    {
+        "name": "PC-PBT",
+        "tier": "A",
+        "description": "PC-PBT is an alloy of polycarbonate and PBT, offering excellent surface quality and low warping.",
+        "pros": "Excellent surface quality, low warping, durable in cold temperatures.",
+        "cons": "Requires high-temperature printing, difficult to find.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1796"
+    },
+    {
+        "name": "Chocolate",
+        "tier": "N/A",
+        "description": "Chocolate is the only printable and edible thermoplastic. It prints at very low temperatures.",
+        "pros": "Edible, prints at low temperatures.",
+        "cons": "Not suitable for structural parts.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1864"
+    },
+    {
+        "name": "TPU",
+        "tier": "S",
+        "description": "TPU is tough, flexible, and available in various hardnesses. It absorbs water quickly but is easy to print.",
+        "pros": "Tough, flexible, available in various hardnesses, easy to print.",
+        "cons": "Absorbs water quickly, requires dehydrator.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1931"
+    },
+    {
+        "name": "TPE",
+        "tier": "F",
+        "description": "TPE is flexible and stretchy but difficult to print due to its runny nature.",
+        "pros": "Flexible and stretchy.",
+        "cons": "Difficult to print, prints often look poor.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1992"
+    },
+    {
+        "name": "SEBS",
+        "tier": "A",
+        "description": "SEBS is a form of TPE enhanced with the same chemical that makes ABS perform well. It is flexible, stretchy, and smooth to print.",
+        "pros": "Flexible, stretchy, smooth to print.",
+        "cons": "Hygroscopic, off-gases during printing.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2053"
+    },
+    {
+        "name": "Polypropylene (PP)",
+        "tier": "F",
+        "description": "Polypropylene is very rugged and has excellent tensile strength but is difficult to print due to poor bed adhesion and warping.",
+        "pros": "Rugged, excellent tensile strength, low density.",
+        "cons": "Poor bed adhesion, warps significantly, difficult to print.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2114"
+    },
+    {
+        "name": "Glass-Filled Polypropylene",
+        "tier": "B",
+        "description": "Glass-Filled Polypropylene is tough and durable but extremely difficult to print due to poor bed adhesion and warping.",
+        "pros": "Extremely tough, durable, lightweight.",
+        "cons": "Poor bed adhesion, warps significantly, requires high-end printer.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2175"
+    },
+    {
+        "name": "OBC (Olefin Block Copolymers)",
+        "tier": "C",
+        "description": "OBC is semi-flexible and has improved warping properties over polypropylene but is still difficult to print.",
+        "pros": "Semi-flexible, low warping, can use supports.",
+        "cons": "Difficult to print, expensive, requires special build surface.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2236"
+    },
+    {
+        "name": "HDPE (High-Density Polyethylene)",
+        "tier": "F",
+        "description": "HDPE is very tough but has extremely poor bed adhesion and warps significantly.",
+        "pros": "Very tough, low density, recycled polymer.",
+        "cons": "Extremely poor bed adhesion, warps significantly, difficult to print.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2297"
+    },
+    {
+        "name": "POM (Polyoxymethylene)",
+        "tier": "F",
+        "description": "POM is stiff and has low friction but has extremely poor bed adhesion and off-gases harmful chemicals.",
+        "pros": "Stiff, low friction.",
+        "cons": "Extremely poor bed adhesion, off-gases harmful chemicals, difficult to print.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2358"
+    },
+    {
+        "name": "PVDF (Polyvinylidene Fluoride)",
+        "tier": "F",
+        "description": "PVDF is tough, durable, and chemically resistant but off-gases toxic fumes if overheated.",
+        "pros": "Tough, durable, chemically resistant, hydrophobic.",
+        "cons": "Off-gases toxic fumes if overheated, expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2419"
+    },
+    {
+        "name": "PEEK (Polyether Ether Ketone)",
+        "tier": "C",
+        "description": "PEEK is extremely strong and heat-resistant but very expensive and difficult to print.",
+        "pros": "Extremely strong, heat-resistant, chemical-resistant.",
+        "cons": "Very expensive, difficult to print, requires specialized equipment.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2480"
+    },
+    {
+        "name": "PEKK (Polyether Ketone Ketone)",
+        "tier": "A",
+        "description": "PEKK is similar to PEEK but easier to print and still offers excellent strength and chemical resistance.",
+        "pros": "Excellent strength, easier to print than PEEK, chemical-resistant.",
+        "cons": "Expensive, requires specialized equipment.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2541"
+    },
+    {
+        "name": "PPS (Polyphenylene Sulfide)",
+        "tier": "C",
+        "description": "PPS is chemically resistant and practical to print but still requires high-temperature printing.",
+        "pros": "Chemically resistant, practical print parameters.",
+        "cons": "Requires high-temperature printing, expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2602"
+    },
+    {
+        "name": "PSU (Polysulfone)",
+        "tier": "B",
+        "description": "PSU is heat-resistant, radiation-resistant, and chemical-resistant, with properties similar to PA-6 Nylon.",
+        "pros": "Heat-resistant, radiation-resistant, chemical-resistant.",
+        "cons": "Difficult to print, expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2663"
+    },
+    {
+        "name": "PES (Polyether Sulfone) and PPSU (Polyphenylsulfone)",
+        "tier": "A",
+        "description": "PES and PPSU are exceptionally rugged, heat-resistant, and chemical-resistant super polymers.",
+        "pros": "Rugged, heat-resistant, chemical-resistant.",
+        "cons": "Difficult to print, very expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2724"
+    },
+    {
+        "name": "Ultem 1010",
+        "tier": "A",
+        "description": "Ultem 1010 is a super polymer with excellent strength, stability, and heat resistance.",
+        "pros": "Excellent strength, stability, heat-resistant.",
+        "cons": "Very expensive, difficult to print, requires specialized equipment.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2785"
+    },
+    {
+        "name": "TPI (Thermoplastic Polyimide)",
+        "tier": "F",
+        "description": "TPI is extremely heat-resistant but very difficult to print, requiring very high temperatures and specialized equipment.",
+        "pros": "Extremely heat-resistant.",
+        "cons": "Very difficult to print, requires very high temperatures and specialized equipment.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2846"
     }
 ]
