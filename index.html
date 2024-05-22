@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- v2 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,8 +32,7 @@
             display: none;
             position: absolute;
             top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
             width: 300px;
             padding: 10px;
             background: #fff;
@@ -49,8 +49,7 @@
             content: "";
             position: absolute;
             top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 10px;
             border-width: 5px;
             border-style: solid;
             border-color: transparent transparent #fff transparent;
@@ -64,10 +63,9 @@
             margin: 20px 0;
             text-align: center;
         }
-        .left-adjusted {
+        .right-adjusted {
             left: auto;
             right: 0;
-            transform: translateX(0);
         }
     </style>
 </head>
@@ -109,10 +107,10 @@
                     filamentDiv.addEventListener('mouseover', () => {
                         const propertiesDiv = filamentDiv.querySelector('.properties');
                         const rect = propertiesDiv.getBoundingClientRect();
-                        if (rect.left < 0) {
-                            propertiesDiv.classList.add('left-adjusted');
+                        if (rect.right > window.innerWidth) {
+                            propertiesDiv.classList.add('right-adjusted');
                         } else {
-                            propertiesDiv.classList.remove('left-adjusted');
+                            propertiesDiv.classList.remove('right-adjusted');
                         }
                     });
                 });
