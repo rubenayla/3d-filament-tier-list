@@ -64,6 +64,11 @@
             margin: 20px 0;
             text-align: center;
         }
+        .left-adjusted {
+            left: auto;
+            right: 0;
+            transform: translateX(0);
+        }
     </style>
 </head>
 <body>
@@ -100,6 +105,16 @@
                         </div>
                     `;
                     tierDiv.appendChild(filamentDiv);
+
+                    filamentDiv.addEventListener('mouseover', () => {
+                        const propertiesDiv = filamentDiv.querySelector('.properties');
+                        const rect = propertiesDiv.getBoundingClientRect();
+                        if (rect.left < 0) {
+                            propertiesDiv.classList.add('left-adjusted');
+                        } else {
+                            propertiesDiv.classList.remove('left-adjusted');
+                        }
+                    });
                 });
             });
         }
