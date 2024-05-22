@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Filament Tier List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .tier {
+            margin-bottom: 20px;
+        }
+        .tier h2 {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .filament {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            position: relative;
+        }
+        .properties {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+        .filament:hover .properties {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>3D Filament Tier List</h1>
+
+    <div id="filaments"></div>
+
+    <script>
+        async function loadFilaments() {
+            const response = await fetch('filaments.json');
+            const filaments = await response.json();
+            const container = document.getElementById('filaments');
+
+            const tiers = ['S', 'A', 'B', 'C', 'F'];
+            tiers.forEach(tier => {
+                const tierDiv = document.createElement('div');
+                tierDiv.classList.add('tier');
+                tierDiv.innerHTML = `<h2>${tier} Tier</h2>`;
+                container.appendChild(tierDiv);
+
+                filaments.filter(filament => filament.tier === tier).forEach(filament => {
+                    const filamentDiv = document.createElement('div');
+                    filamentDiv.classList.add('filament');
+                    filamentDiv.innerHTML = `
+                        ${filament.name}
+                        <div class="properties">${filament.properties}</div>
+                    `;
+                    tierDiv.appendChild(filamentDiv);
+                });
+            });
+        }
+
+        loadFilaments();
+    </script>
+</body>
+</html>

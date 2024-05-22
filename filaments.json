@@ -1,0 +1,12 @@
+[
+    {
+        "name": "PLA",
+        "tier": "A",
+        "properties": "Easy to print, cheap, available in many colors, stiff, good tensile strength, susceptible to UV light, and shatters when dropped."
+    },
+    {
+        "name": "Silk PLA",
+        "tier": "B",
+        "properties": "Shiny, weaker than regular PLA, easier to remove supports, can puff up during printing."
+    }
+]
