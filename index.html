@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- v5 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -75,46 +74,46 @@
         <a href="https://github.com/rubenayla/3d-filament-tier-list" target="_blank">View this project on GitHub</a>
     </div>
 
+    <!-- Filaments container -->
     <div id="filaments"></div>
 
     <script>
         async function loadFilaments() {
-            const response = await fetch('filaments.json');
-            const filaments = await response.json();
-            const container = document.getElementById('filaments');
+            try {
+                const response = await fetch('filaments.json'); // Use the correct filename
+                if (!response.ok) throw new Error('Network response was not ok');
+                const filaments = await response.json();
+                const container = document.getElementById('filaments');
 
-            const tiers = ['S', 'A', 'B', 'C', 'F'];
-            tiers.forEach(tier => {
-                const tierDiv = document.createElement('div');
-                tierDiv.classList.add('tier');
-                tierDiv.innerHTML = `<h2>${tier} Tier</h2>`;
-                container.appendChild(tierDiv);
+                const tiers = ['S', 'A', 'B', 'C', 'F'];
+                tiers.forEach(tier => {
+                    const tierDiv = document.createElement('div');
+                    tierDiv.classList.add('tier');
+                    tierDiv.innerHTML = `<h2>${tier} Tier</h2>`;
+                    container.appendChild(tierDiv);
 
-                filaments.filter(filament => filament.tier === tier).forEach(filament => {
-                    const filamentDiv = document.createElement('div');
-                    filamentDiv.classList.add('filament');
-                    filamentDiv.innerHTML = `
-                        <strong>${filament.name}</strong>
-                        <div class="properties">
-                            <p><strong>Description:</strong> ${filament.description}</p>
-                            <p><strong>Pros:</strong> ${filament.pros}</p>
-                            <p><strong>Cons:</strong> ${filament.cons}</p>
-                            <a class="link" href="${filament.link}" target="_blank">Watch Video</a>
-                        </div>
-                    `;
-                    tierDiv.appendChild(filamentDiv);
-
-                    filamentDiv.addEventListener('mouseover', () => {
-                        const propertiesDiv = filamentDiv.querySelector('.properties');
-                        const rect = propertiesDiv.getBoundingClientRect();
-                        if (rect.right > window.innerWidth) {
-                            propertiesDiv.classList.add('right-adjusted');
-                        } else {
-                            propertiesDiv.classList.remove('right-adjusted');
-                        }
+                    filaments.filter(filament => filament.tier === tier).forEach(filament => {
+                        const filamentDiv = document.createElement('div');
+                        filamentDiv.classList.add('filament');
+                        filamentDiv.innerHTML = `
+                            <strong>${filament.name}</strong>
+                            <div class="properties">
+                                <p><strong>Description:</strong> ${filament.description}</p>
+                                <p><strong>Pros:</strong> ${filament.pros}</p>
+                                <p><strong>Cons:</strong> ${filament.cons}</p>
+                                <p><strong>Nozzle Temp:</strong> ${filament.printing_parameters.nozzle_temp}°C</p>
+                                <p><strong>Bed Temp:</strong> ${filament.printing_parameters.bed_temp}°C</p>
+                                <p><strong>Max Strength Temp:</strong> ${filament.printing_parameters.max_strength_temp}°C</p>
+                                <a class="link" href="${filament.link}" target="_blank">Watch Video</a>
+                            </div>
+                        `;
+                        tierDiv.appendChild(filamentDiv);
                     });
                 });
-            });
+            } catch (error) {
+                console.error('Failed to load filaments:', error);
+                document.getElementById('filaments').innerHTML = `<p>Error loading filament data. Check console for details.</p>`;
+            }
         }
 
         loadFilaments();
