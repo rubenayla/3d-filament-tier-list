@@ -46,9 +46,9 @@
         "cons": "Extremely brittle, expensive, weak.",
         "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=345",
         "printing_parameters": {
-            "nozzle_temp": "200-220",
-            "bed_temp": "50-60",
-            "max_strength_temp": "60"
+            "nozzle_temp": "190-220",
+            "bed_temp": "20-60",
+            "max_strength_temp": "55"
         }
     },
     {
@@ -59,9 +59,9 @@
         "cons": "Weaker, absorbs humidity, difficult to print.",
         "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=386",
         "printing_parameters": {
-            "nozzle_temp": "200-220",
+            "nozzle_temp": "200-230",
             "bed_temp": "20-60",
-            "max_strength_temp": "60"
+            "max_strength_temp": "55"
         }
     },
     {
@@ -69,7 +69,7 @@
         "tier": "S",
         "description": "Tough PLA is a combination of PLA and polybutene terephthalate (PBT). It resists higher temperatures and handles impacts better.",
         "pros": "Higher temperature resistance, impact-resistant, doesn't shatter.",
-        "cons": "Higher cost than regular PLA, may require slight adjustments in print settings.",
+        "cons": "None significant for light-duty projects.",
         "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=454",
         "printing_parameters": {
             "nozzle_temp": "210-230",
@@ -98,7 +98,7 @@
         "cons": "Softens at lower temperatures, can be problematic in hot climates.",
         "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=525",
         "printing_parameters": {
-            "nozzle_temp": "180-210",
+            "nozzle_temp": "180-220",
             "bed_temp": "20-60",
             "max_strength_temp": "50"
         }
@@ -111,8 +111,8 @@
         "cons": "Translucent waxy consistency, no adhesive sticks to it.",
         "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=573",
         "printing_parameters": {
-            "nozzle_temp": "80-100",
-            "bed_temp": "0-30",
+            "nozzle_temp": "180-210",
+            "bed_temp": "20-40",
             "max_strength_temp": "40"
         }
     },
@@ -132,25 +132,25 @@
     {
         "name": "Carbon Fiber PETG",
         "tier": "S",
-        "description": "Carbon Fiber PETG combines PETG with carbon fibers, resulting in a stiffer material with less warping and shrinkage.",
-        "pros": "High stiffness, less warping, matte finish, improved dimensional stability.",
-        "cons": "Requires a hardened steel nozzle, more brittle than regular PETG.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=720",
+        "description": "Carbon Fiber PETG stabilizes molten filament, improving stability and support quality. It has a matte finish and is stiffer than regular PETG.",
+        "pros": "Stabilizes molten filament, improves stability, matte finish.",
+        "cons": "Expensive, limited suppliers.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=678",
         "printing_parameters": {
-            "nozzle_temp": "230-250",
+            "nozzle_temp": "240-260",
             "bed_temp": "70-90",
             "max_strength_temp": "85"
         }
     },
     {
         "name": "PCTG",
-        "tier": "A",
-        "description": "PCTG is similar to PETG but offers increased impact resistance and clarity, with easier printing at lower temperatures.",
-        "pros": "Increased impact resistance, transparent, easy to print.",
-        "cons": "Slightly more expensive than PETG, limited availability.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=845",
+        "tier": "S",
+        "description": "PCTG is an improved version of PETG. It is very tough, low-warping, and has almost perfect layer adhesion.",
+        "pros": "Very tough, low-warping, excellent layer adhesion.",
+        "cons": "Expensive, hard to find, difficult to remove supports.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=710",
         "printing_parameters": {
-            "nozzle_temp": "220-250",
+            "nozzle_temp": "240-260",
             "bed_temp": "70-90",
             "max_strength_temp": "85"
         }
@@ -158,36 +158,36 @@
     {
         "name": "PET",
         "tier": "B",
-        "description": "PET is known for its strength and durability, commonly used in food-safe applications and recyclable products.",
-        "pros": "Strong, durable, food-safe, recyclable.",
-        "cons": "Can be tricky to print due to warping, requires high temperatures.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=900",
+        "description": "PET is stiffer and tougher than PETG, with better resistance to high temperatures. However, it is harder to print.",
+        "pros": "Stiffer and tougher, better high-temperature resistance.",
+        "cons": "Harder to print, worse overhang and warping issues.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=761",
         "printing_parameters": {
             "nozzle_temp": "240-260",
             "bed_temp": "80-100",
-            "max_strength_temp": "100"
+            "max_strength_temp": "85"
         }
     },
     {
         "name": "CF PET",
-        "tier": "S",
-        "description": "Carbon Fiber PET offers added rigidity and dimensional stability, making it ideal for applications needing high strength.",
-        "pros": "Increased stiffness, high dimensional stability, minimal warping.",
-        "cons": "More brittle, requires a hardened nozzle.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=950",
+        "tier": "A",
+        "description": "CF PET is easier to print than entry-level PETG and is extremely stiff, making it suitable for high-performance parts.",
+        "pros": "Easy to print, extremely stiff.",
+        "cons": "Expensive, requires a high-performance printer.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=815",
         "printing_parameters": {
             "nozzle_temp": "240-260",
             "bed_temp": "80-100",
-            "max_strength_temp": "100"
+            "max_strength_temp": "85"
         }
     },
     {
         "name": "PVB",
-        "tier": "B",
-        "description": "PVB (Polyvinyl Butyral) is known for its transparency and ability to be smoothed with isopropyl alcohol, making it ideal for clear, glossy prints.",
-        "pros": "Clear finish, smoothable with alcohol, good layer adhesion.",
-        "cons": "Low heat resistance, sensitive to humidity, not very strong.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1020",
+        "tier": "C",
+        "description": "PVB is a weaker filament but reveals its true colors when exposed to alcohol, fusing layers together for a smooth finish.",
+        "pros": "Smooth finish with alcohol vapor smoothing.",
+        "cons": "Weaker, fuses together easily, hard to print.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=845",
         "printing_parameters": {
             "nozzle_temp": "200-230",
             "bed_temp": "50-60",
@@ -210,10 +210,10 @@
     {
         "name": "ASA",
         "tier": "A",
-        "description": "ASA (Acrylonitrile Styrene Acrylate) is UV-resistant and weatherproof, making it ideal for outdoor applications.",
-        "pros": "UV-resistant, weatherproof, strong layer adhesion.",
-        "cons": "Requires a heated bed, prone to warping, emits fumes.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1100",
+        "description": "ASA is a chemical cousin of ABS but with better UV resistance and less warping. It has a handsome matte surface.",
+        "pros": "Better UV resistance, less warping, matte surface.",
+        "cons": "Off-gases during printing, requires enclosure.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=940",
         "printing_parameters": {
             "nozzle_temp": "240-260",
             "bed_temp": "90-110",
@@ -223,10 +223,10 @@
     {
         "name": "HIPS",
         "tier": "B",
-        "description": "HIPS (High Impact Polystyrene) is commonly used as a dissolvable support material and has good impact resistance.",
-        "pros": "Soluble in limonene, impact-resistant, good for support structures.",
-        "cons": "Limited strength, requires high temperatures, soluble only in specific solvents.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1150",
+        "description": "HIPS is used as support material for ASA or ABS. It is slightly flexible and has low density.",
+        "pros": "Flexible, low density, dissolvable in limonene.",
+        "cons": "Soft and waxy, low bed adhesion.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=982",
         "printing_parameters": {
             "nozzle_temp": "230-250",
             "bed_temp": "90-110",
@@ -236,10 +236,10 @@
     {
         "name": "PA-6 Nylon",
         "tier": "B",
-        "description": "PA-6 Nylon is known for its exceptional strength and flexibility, ideal for functional parts under stress.",
-        "pros": "High strength, flexible, good durability.",
-        "cons": "Highly hygroscopic, requires a heated bed and enclosure.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1200",
+        "description": "PA-6 Nylon is exceptionally strong and flexible. It is stable at high temperatures but is hygroscopic and warps easily.",
+        "pros": "High strength, flexible, high-temperature stability.",
+        "cons": "Hygroscopic, warps easily, requires heated chamber.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1022",
         "printing_parameters": {
             "nozzle_temp": "240-270",
             "bed_temp": "90-110",
@@ -248,11 +248,11 @@
     },
     {
         "name": "PA-12 Nylon",
-        "tier": "A",
-        "description": "PA-12 Nylon offers high impact resistance and low moisture absorption, making it stable in a variety of environments.",
-        "pros": "Low moisture absorption, high impact resistance, good dimensional stability.",
-        "cons": "Requires high printing temperatures, may need an enclosed build area.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1250",
+        "tier": "B",
+        "description": "PA-12 Nylon is stiffer than PA-6 and prints at higher temperatures. It is brittle and warps more than PA-6.",
+        "pros": "Stiffer, higher temperature resistance.",
+        "cons": "More brittle, warps more, expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1096",
         "printing_parameters": {
             "nozzle_temp": "250-270",
             "bed_temp": "90-110",
@@ -261,11 +261,11 @@
     },
     {
         "name": "PA-6 CF Nylon",
-        "tier": "S",
-        "description": "PA-6 CF Nylon combines nylon with carbon fibers, offering enhanced stiffness, strength, and reduced warping.",
-        "pros": "High stiffness, low warping, excellent strength-to-weight ratio.",
-        "cons": "Requires a hardened nozzle, hygroscopic, needs high print temperatures.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1300",
+        "tier": "B",
+        "description": "PA-6 CF Nylon is stiffer and warps less than regular nylon but still requires high-end equipment to print properly.",
+        "pros": "Stiffer, reduced warping.",
+        "cons": "Requires high-end equipment, expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1130",
         "printing_parameters": {
             "nozzle_temp": "260-280",
             "bed_temp": "90-110",
@@ -274,11 +274,11 @@
     },
     {
         "name": "PA-12 CF Nylon",
-        "tier": "S",
-        "description": "PA-12 CF Nylon combines PA-12 Nylon with carbon fibers, providing excellent dimensional stability, low moisture absorption, and high stiffness.",
-        "pros": "High stiffness, low moisture absorption, excellent dimensional stability, reduced warping.",
-        "cons": "Requires a hardened nozzle, more brittle than standard PA-12, high printing temperature required.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1350",
+        "tier": "C",
+        "description": "PA-12 CF Nylon is even stiffer than PA-6 CF but sacrifices some of nylon's low friction properties.",
+        "pros": "Extremely stiff.",
+        "cons": "Sacrifices low friction, very expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1172",
         "printing_parameters": {
             "nozzle_temp": "250-270",
             "bed_temp": "90-110",
@@ -288,10 +288,10 @@
     {
         "name": "Glass-Filled Nylon",
         "tier": "S",
-        "description": "Glass-Filled Nylon is reinforced with glass fibers, providing increased rigidity, dimensional stability, and strength, ideal for heavy-duty applications.",
-        "pros": "High rigidity, excellent dimensional stability, strong and durable.",
-        "cons": "Requires a hardened nozzle, high printing temperature, brittle compared to pure nylon.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1400",
+        "description": "Glass-Filled Nylon is tough, durable, and resistant to heat, abrasion, and impact. It is easier to print than pure nylon.",
+        "pros": "Extremely tough, durable, heat and abrasion-resistant.",
+        "cons": "Requires high-end printer, very abrasive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1237",
         "printing_parameters": {
             "nozzle_temp": "260-280",
             "bed_temp": "90-110",
@@ -300,11 +300,11 @@
     },
     {
         "name": "Nylon/PETG Alloys",
-        "tier": "A",
-        "description": "Nylon/PETG alloys combine the flexibility and strength of nylon with the easier printability and layer adhesion of PETG, resulting in a durable yet user-friendly material.",
-        "pros": "High flexibility and impact resistance, good adhesion, easier to print than pure nylon.",
-        "cons": "Lower heat resistance than pure nylon, moderate hygroscopicity, may still require a heated bed.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1450",
+        "tier": "C",
+        "description": "Nylon/PETG Alloys combine properties of nylon and PETG but inherit many of their weaknesses, such as warping.",
+        "pros": "Improves PETG's strength.",
+        "cons": "Tends to warp, not as strong as pure nylon.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1268",
         "printing_parameters": {
             "nozzle_temp": "240-260",
             "bed_temp": "70-90",
@@ -313,11 +313,11 @@
     },
     {
         "name": "Polycarbonate (PC)",
-        "tier": "S",
-        "description": "Polycarbonate is a highly durable material known for its impact resistance, transparency, and heat resistance, ideal for demanding applications.",
-        "pros": "High impact resistance, heat resistant, strong and durable.",
-        "cons": "Requires high printing temperatures, prone to warping, sensitive to moisture.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1500",
+        "tier": "B",
+        "description": "Polycarbonate is very tough and stiff, with a glass-like sheen. It absorbs water quickly and is slow to print.",
+        "pros": "Very tough, stiff, clear.",
+        "cons": "Absorbs water quickly, slow to print, prints at very high temperatures.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1313",
         "printing_parameters": {
             "nozzle_temp": "260-300",
             "bed_temp": "100-120",
@@ -326,11 +326,11 @@
     },
     {
         "name": "CF Polycarbonate",
-        "tier": "S",
-        "description": "CF Polycarbonate combines polycarbonate with carbon fibers, offering enhanced rigidity, heat resistance, and dimensional stability.",
-        "pros": "High rigidity, excellent heat resistance, low warping, strong and durable.",
-        "cons": "Requires a hardened nozzle, high printing temperatures, more brittle than pure polycarbonate.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1550",
+        "tier": "A",
+        "description": "CF Polycarbonate is extremely stiff and rough, making it suitable for high-strength applications.",
+        "pros": "Extremely stiff, rough, affordable.",
+        "cons": "Requires high-performance printer, abrasive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1355",
         "printing_parameters": {
             "nozzle_temp": "270-300",
             "bed_temp": "100-120",
@@ -339,11 +339,11 @@
     },
     {
         "name": "PMMA (Acrylic)",
-        "tier": "B",
-        "description": "PMMA, or acrylic, is known for its transparency and hardness, often used for lightweight, clear parts.",
-        "pros": "Transparent, lightweight, scratch-resistant, durable.",
-        "cons": "Prone to warping, brittle, sensitive to moisture, requires controlled print environment.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1600",
+        "tier": "C",
+        "description": "PMMA is highly transparent and UV resistant, but it is brittle and absorbs water.",
+        "pros": "Highly transparent, UV resistant, can be polished.",
+        "cons": "Brittle, absorbs water, poor bed and layer adhesion.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1416",
         "printing_parameters": {
             "nozzle_temp": "230-250",
             "bed_temp": "80-100",
@@ -353,10 +353,10 @@
     {
         "name": "PC-PBT",
         "tier": "A",
-        "description": "PC-PBT is a blend of polycarbonate (PC) and polybutylene terephthalate (PBT), offering improved impact resistance, flexibility, and chemical resistance.",
-        "pros": "High impact resistance, chemical resistance, good flexibility, dimensional stability.",
-        "cons": "Requires high printing temperatures, sensitive to moisture, can be tricky to print.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1650",
+        "description": "PC-PBT is an alloy of polycarbonate and PBT, offering excellent surface quality and low warping.",
+        "pros": "Excellent surface quality, low warping, durable in cold temperatures.",
+        "cons": "Requires high-temperature printing, difficult to find.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1455",
         "printing_parameters": {
             "nozzle_temp": "250-270",
             "bed_temp": "90-110",
@@ -365,11 +365,11 @@
     },
     {
         "name": "Chocolate",
-        "tier": "F",
-        "description": "Chocolate can be used as a 3D printing material for food-safe applications, allowing for unique edible designs.",
-        "pros": "Edible, food-safe, unique aesthetic possibilities.",
-        "cons": "Requires specialized food printer, sensitive to temperature fluctuations.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1700",
+        "tier": "Other",
+        "description": "Chocolate is the only printable and edible thermoplastic. It prints at very low temperatures.",
+        "pros": "Edible, prints at low temperatures.",
+        "cons": "Not suitable for structural parts.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1864",
         "printing_parameters": {
             "nozzle_temp": "28-32",
             "bed_temp": "Room temperature",
@@ -378,11 +378,11 @@
     },
     {
         "name": "TPU",
-        "tier": "A",
-        "description": "TPU (Thermoplastic Polyurethane) is a flexible, rubber-like material, commonly used for applications requiring elasticity.",
-        "pros": "Flexible, durable, impact-resistant, suitable for wearable parts.",
-        "cons": "Difficult to print due to flexibility, requires slow print speeds.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1750",
+        "tier": "S",
+        "description": "TPU is tough, flexible, and available in various hardnesses. It absorbs water quickly but is easy to print.",
+        "pros": "Tough, flexible, available in various hardnesses, easy to print.",
+        "cons": "Absorbs water quickly, requires dehydrator.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1496",
         "printing_parameters": {
             "nozzle_temp": "210-230",
             "bed_temp": "20-60",
@@ -391,11 +391,11 @@
     },
     {
         "name": "TPE",
-        "tier": "B",
-        "description": "TPE (Thermoplastic Elastomer) is a highly flexible material, ideal for producing parts with rubber-like elasticity.",
-        "pros": "Very flexible, rubber-like properties, good durability.",
-        "cons": "Challenging to print, prone to stringing and warping.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1800",
+        "tier": "F",
+        "description": "TPE is flexible and stretchy but difficult to print due to its runny nature.",
+        "pros": "Flexible and stretchy.",
+        "cons": "Difficult to print, prints often look poor.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1620",
         "printing_parameters": {
             "nozzle_temp": "220-250",
             "bed_temp": "20-60",
@@ -404,11 +404,11 @@
     },
     {
         "name": "SEBS",
-        "tier": "B",
-        "description": "SEBS (Styrene-Ethylene-Butylene-Styrene) is a flexible material with excellent UV resistance, suitable for outdoor applications.",
-        "pros": "UV-resistant, flexible, suitable for outdoor use.",
-        "cons": "Limited heat resistance, requires specialized handling for optimal print results.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1850",
+        "tier": "A",
+        "description": "SEBS is a form of TPE enhanced with the same chemical that makes ABS perform well. It is flexible, stretchy, and smooth to print.",
+        "pros": "Flexible, stretchy, smooth to print.",
+        "cons": "Hygroscopic, off-gases during printing.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1646",
         "printing_parameters": {
             "nozzle_temp": "230-250",
             "bed_temp": "20-50",
@@ -417,11 +417,11 @@
     },
     {
         "name": "Polypropylene (PP)",
-        "tier": "B",
-        "description": "Polypropylene is a lightweight, flexible material with good chemical resistance, commonly used in household items.",
-        "pros": "Lightweight, flexible, chemical-resistant, good fatigue resistance.",
-        "cons": "Prone to warping, difficult to adhere to the bed, requires a heated bed.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1900",
+        "tier": "F",
+        "description": "Polypropylene is very rugged and has excellent tensile strength but is difficult to print due to poor bed adhesion and warping.",
+        "pros": "Rugged, excellent tensile strength, low density.",
+        "cons": "Poor bed adhesion, warps significantly, difficult to print.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1697",
         "printing_parameters": {
             "nozzle_temp": "220-240",
             "bed_temp": "80-100",
@@ -430,11 +430,11 @@
     },
     {
         "name": "Glass-Filled Polypropylene",
-        "tier": "A",
-        "description": "Glass-Filled Polypropylene combines PP with glass fibers for added strength, rigidity, and heat resistance.",
-        "pros": "High rigidity, improved heat resistance, strong and lightweight.",
-        "cons": "Requires a heated bed, more brittle than pure PP, requires hardened nozzle.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1950",
+        "tier": "B",
+        "description": "Glass-Filled Polypropylene is tough and durable but extremely difficult to print due to poor bed adhesion and warping.",
+        "pros": "Extremely tough, durable, lightweight.",
+        "cons": "Poor bed adhesion, warps significantly, requires high-end printer.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1744",
         "printing_parameters": {
             "nozzle_temp": "230-250",
             "bed_temp": "80-100",
@@ -444,10 +444,10 @@
     {
         "name": "OBC (Olefin Block Copolymers)",
         "tier": "C",
-        "description": "OBC is a flexible, impact-resistant material similar to polyethylene, used for applications requiring elasticity and durability.",
-        "pros": "Good flexibility, impact-resistant, lightweight.",
-        "cons": "Low heat resistance, challenging to print, adhesion issues.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2000",
+        "description": "OBC is semi-flexible and has improved warping properties over polypropylene but is still difficult to print.",
+        "pros": "Semi-flexible, low warping, can use supports.",
+        "cons": "Difficult to print, expensive, requires special build surface.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1783",
         "printing_parameters": {
             "nozzle_temp": "220-240",
             "bed_temp": "60-80",
@@ -456,24 +456,24 @@
     },
     {
         "name": "HDPE (High-Density Polyethylene)",
-        "tier": "B",
-        "description": "HDPE is a strong, chemical-resistant material often used in containers and piping.",
-        "pros": "Chemical-resistant, strong, lightweight.",
-        "cons": "Prone to warping, poor bed adhesion, requires a heated bed.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2050",
+        "tier": "F",
+        "description": "HDPE is very tough but has extremely poor bed adhesion and warps significantly.",
+        "pros": "Very tough, low density, recycled polymer.",
+        "cons": "Extremely poor bed adhesion, warps significantly, difficult to print.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1816",
         "printing_parameters": {
             "nozzle_temp": "220-260",
             "bed_temp": "100-110",
             "max_strength_temp": "90"
         }
-    },    
+    },
     {
         "name": "POM (Polyoxymethylene)",
-        "tier": "A",
-        "description": "POM, also known as Delrin or acetal, is a strong, low-friction material ideal for mechanical parts like gears and bearings.",
-        "pros": "High strength, low friction, good dimensional stability.",
-        "cons": "Difficult to print, warps easily, requires heated enclosure.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2100",
+        "tier": "F",
+        "description": "POM is stiff and has low friction but has extremely poor bed adhesion and off-gases harmful chemicals.",
+        "pros": "Stiff, low friction.",
+        "cons": "Extremely poor bed adhesion, off-gases harmful chemicals, difficult to print.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1858",
         "printing_parameters": {
             "nozzle_temp": "220-240",
             "bed_temp": "100-120",
@@ -482,11 +482,11 @@
     },
     {
         "name": "PVDF (Polyvinylidene Fluoride)",
-        "tier": "B",
-        "description": "PVDF is a durable, chemical-resistant material often used in chemical processing environments.",
-        "pros": "Chemical-resistant, durable, good thermal stability.",
-        "cons": "Difficult to print, requires high temperatures, sensitive to warping.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2150",
+        "tier": "F",
+        "description": "PVDF is tough, durable, and chemically resistant but off-gases toxic fumes if overheated.",
+        "pros": "Tough, durable, chemically resistant, hydrophobic.",
+        "cons": "Off-gases toxic fumes if overheated, expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1916",
         "printing_parameters": {
             "nozzle_temp": "230-250",
             "bed_temp": "100-110",
@@ -495,11 +495,11 @@
     },
     {
         "name": "PEEK (Polyether Ether Ketone)",
-        "tier": "S",
-        "description": "PEEK is a high-performance engineering thermoplastic with exceptional heat and chemical resistance, suitable for demanding industrial applications.",
-        "pros": "Exceptional heat resistance, chemical resistance, high strength.",
-        "cons": "Expensive, very high printing temperature required, requires heated enclosure.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2200",
+        "tier": "C",
+        "description": "PEEK is extremely strong and heat-resistant but very expensive and difficult to print.",
+        "pros": "Extremely strong, heat-resistant, chemical-resistant.",
+        "cons": "Very expensive, difficult to print, requires specialized equipment.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1986",
         "printing_parameters": {
             "nozzle_temp": "350-400",
             "bed_temp": "120-150",
@@ -508,11 +508,11 @@
     },
     {
         "name": "PEKK (Polyether Ketone Ketone)",
-        "tier": "S",
-        "description": "PEKK is similar to PEEK but offers improved printability and is ideal for high-strength, high-heat applications.",
-        "pros": "High strength, excellent thermal resistance, better printability than PEEK.",
-        "cons": "Expensive, high printing temperature required, sensitive to moisture.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2250",
+        "tier": "A",
+        "description": "PEKK is similar to PEEK but easier to print and still offers excellent strength and chemical resistance.",
+        "pros": "Excellent strength, easier to print than PEEK, chemical-resistant.",
+        "cons": "Expensive, requires specialized equipment.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2101",
         "printing_parameters": {
             "nozzle_temp": "340-380",
             "bed_temp": "110-130",
@@ -521,11 +521,11 @@
     },
     {
         "name": "PPS (Polyphenylene Sulfide)",
-        "tier": "A",
-        "description": "PPS is a high-performance plastic with strong chemical resistance and thermal stability, used in demanding environments.",
-        "pros": "Excellent chemical resistance, high heat tolerance, dimensional stability.",
-        "cons": "Requires high print temperature, brittle, sensitive to moisture.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2300",
+        "tier": "C",
+        "description": "PPS is chemically resistant and practical to print but still requires high-temperature printing.",
+        "pros": "Chemically resistant, practical print parameters.",
+        "cons": "Requires high-temperature printing, expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2138",
         "printing_parameters": {
             "nozzle_temp": "310-330",
             "bed_temp": "100-120",
@@ -534,11 +534,11 @@
     },
     {
         "name": "PSU (Polysulfone)",
-        "tier": "A",
-        "description": "Polysulfone is known for its high-temperature stability and resistance to chemicals, ideal for applications in medical and automotive fields.",
-        "pros": "High heat resistance, good chemical resistance, stable.",
-        "cons": "High printing temperature required, sensitive to moisture, limited flexibility.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2350",
+        "tier": "B",
+        "description": "PSU is heat-resistant, radiation-resistant, and chemical-resistant, with properties similar to PA-6 Nylon.",
+        "pros": "Heat-resistant, radiation-resistant, chemical-resistant.",
+        "cons": "Difficult to print, expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2179",
         "printing_parameters": {
             "nozzle_temp": "320-340",
             "bed_temp": "120-140",
@@ -548,10 +548,10 @@
     {
         "name": "PES (Polyether Sulfone) and PPSU (Polyphenylsulfone)",
         "tier": "A",
-        "description": "PES and PPSU are high-performance thermoplastics with excellent chemical and heat resistance, often used in aerospace and medical applications.",
-        "pros": "Exceptional chemical resistance, high heat tolerance, strong and durable.",
-        "cons": "Difficult to print, high temperature required, sensitive to moisture.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2400",
+        "description": "PES and PPSU are exceptionally rugged, heat-resistant, and chemical-resistant super polymers.",
+        "pros": "Rugged, heat-resistant, chemical-resistant.",
+        "cons": "Difficult to print, very expensive.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2218",
         "printing_parameters": {
             "nozzle_temp": "340-380",
             "bed_temp": "120-150",
@@ -560,11 +560,11 @@
     },
     {
         "name": "Ultem 1010",
-        "tier": "S",
-        "description": "Ultem 1010 is a PEI-based material known for its exceptional thermal stability and strength, suitable for high-performance industrial applications.",
-        "pros": "High strength, excellent heat resistance, biocompatible.",
-        "cons": "Very high printing temperature, requires specialized equipment, expensive.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2450",
+        "tier": "A",
+        "description": "Ultem 1010 is a super polymer with excellent strength, stability, and heat resistance.",
+        "pros": "Excellent strength, stability, heat-resistant.",
+        "cons": "Very expensive, difficult to print, requires specialized equipment.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2241",
         "printing_parameters": {
             "nozzle_temp": "360-390",
             "bed_temp": "140-160",
@@ -573,15 +573,15 @@
     },
     {
         "name": "TPI (Thermoplastic Polyimide)",
-        "tier": "S",
-        "description": "TPI is an extremely high-performance polymer with outstanding thermal and chemical resistance, often used in aerospace and high-stress environments.",
-        "pros": "Exceptional thermal stability, chemical resistance, suitable for extreme conditions.",
-        "cons": "Extremely high printing temperature, very expensive, specialized equipment needed.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2500",
+        "tier": "F",
+        "description": "TPI is extremely heat-resistant but very difficult to print, requiring very high temperatures and specialized equipment.",
+        "pros": "Extremely heat-resistant.",
+        "cons": "Very difficult to print, requires very high temperatures and specialized equipment.",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=2378",
         "printing_parameters": {
             "nozzle_temp": "380-420",
             "bed_temp": "160-180",
             "max_strength_temp": "260"
         }
-    }    
+    }
 ]

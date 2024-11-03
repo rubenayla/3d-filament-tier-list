@@ -7,112 +7,159 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
         }
         .tier {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .tier h2 {
-            background: #eee;
+            background-color: #444;
+            color: white;
             padding: 10px;
-            border-radius: 5px;
+            margin: 0;
+            text-align: center;
+        }
+        .filament-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 15px;
         }
         .filament {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 200px;
-            text-align: center;
-            position: relative;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fff;
+            flex: 1 1 calc(33% - 20px); /* 3 columns */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
         }
-        .properties {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 300px;
-            padding: 10px;
-            background: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            z-index: 1;
-            white-space: normal;
+        .filament:hover {
+            transform: translateY(-5px);
         }
-        .filament:hover .properties {
-            display: block;
+        .filament h3 {
+            margin-top: 0;
+            color: #333;
         }
-        .filament:hover .properties::before {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: 10px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: transparent transparent #fff transparent;
+        .filament p, .filament ul {
+            margin: 0 0 10px;
+            font-size: 14px;
         }
-        .link {
-            margin-top: 10px;
-            display: block;
+        .filament ul {
+            padding-left: 20px;
         }
-        .github-link {
-            display: block;
-            margin: 20px 0;
-            text-align: center;
+        .filament a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .right-adjusted {
-            left: auto;
-            right: 0;
+        .filament a:hover {
+            text-decoration: underline;
+        }
+        .more-info {
+            display: none; /* Hidden by default */
+        }
+        .read-more {
+            color: #007bff;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <h1>3D Filament Tier List</h1>
-    <div class="github-link">
-        <a href="https://github.com/rubenayla/3d-filament-tier-list" target="_blank">View this project on GitHub</a>
-    </div>
-
-    <!-- Filaments container -->
-    <div id="filaments"></div>
+    <div id="tiers"></div>
 
     <script>
         async function loadFilaments() {
             try {
-                const response = await fetch('filaments.json'); // Use the correct filename
+                const response = await fetch('filaments.json');
                 if (!response.ok) throw new Error('Network response was not ok');
+
                 const filaments = await response.json();
-                const container = document.getElementById('filaments');
+                const tiers = {};
 
-                const tiers = ['S', 'A', 'B', 'C', 'F'];
-                tiers.forEach(tier => {
-                    const tierDiv = document.createElement('div');
-                    tierDiv.classList.add('tier');
-                    tierDiv.innerHTML = `<h2>${tier} Tier</h2>`;
-                    container.appendChild(tierDiv);
+                // Organize filaments by tier
+                filaments.forEach(filament => {
+                    const tier = filament.tier ?? "Other";
+                    if (!tiers[tier]) tiers[tier] = [];
+                    tiers[tier].push(filament);
+                });
 
-                    filaments.filter(filament => filament.tier === tier).forEach(filament => {
-                        const filamentDiv = document.createElement('div');
-                        filamentDiv.classList.add('filament');
-                        filamentDiv.innerHTML = `
-                            <strong>${filament.name}</strong>
-                            <div class="properties">
-                                <p><strong>Description:</strong> ${filament.description}</p>
-                                <p><strong>Pros:</strong> ${filament.pros}</p>
-                                <p><strong>Cons:</strong> ${filament.cons}</p>
-                                <p><strong>Nozzle Temp:</strong> ${filament.printing_parameters.nozzle_temp}°C</p>
-                                <p><strong>Bed Temp:</strong> ${filament.printing_parameters.bed_temp}°C</p>
-                                <p><strong>Max Strength Temp:</strong> ${filament.printing_parameters.max_strength_temp}°C</p>
-                                <a class="link" href="${filament.link}" target="_blank">Watch Video</a>
-                            </div>
-                        `;
-                        tierDiv.appendChild(filamentDiv);
-                    });
+                // Define the correct tier order
+                const tierOrder = ["S", "A", "B", "C", "F", "Other"];
+
+                // Render each tier section in the correct order
+                const tiersContainer = document.getElementById('tiers');
+                tierOrder.forEach(tier => {
+                    if (tiers[tier]) {
+                        const tierDiv = document.createElement("div");
+                        tierDiv.classList.add("tier");
+
+                        // Title for each tier
+                        tierDiv.innerHTML = `<h2>Tier ${tier}</h2><div class="filament-container"></div>`;
+                        const container = tierDiv.querySelector(".filament-container");
+
+                        // Add filaments within the tier
+                        tiers[tier].forEach(filament => {
+                            const name = filament.name ?? "Unknown";
+                            const description = filament.description ?? "No description available.";
+                            const pros = filament.pros ?? "Not specified.";
+                            const cons = filament.cons ?? "Not specified.";
+                            const link = filament.link ?? "#";
+
+                            const nozzleTemp = filament.printing_parameters?.nozzle_temp ?? "Not specified";
+                            const bedTemp = filament.printing_parameters?.bed_temp ?? "Not specified";
+                            const maxStrengthTemp = filament.printing_parameters?.max_strength_temp ?? "Not specified";
+
+                            const filamentDiv = document.createElement("div");
+                            filamentDiv.classList.add("filament");
+
+                            filamentDiv.innerHTML = `
+                                <h3>${name}</h3>
+                                <p><strong>Description:</strong> ${description}</p>
+                                <div class="more-info">
+                                    <p><strong>Pros:</strong> ${pros}</p>
+                                    <p><strong>Cons:</strong> ${cons}</p>
+                                    <p><strong>Printing Parameters:</strong></p>
+                                    <ul>
+                                        <li><strong>Nozzle Temperature:</strong> ${nozzleTemp}</li>
+                                        <li><strong>Bed Temperature:</strong> ${bedTemp}</li>
+                                        <li><strong>Max Strength Temperature:</strong> ${maxStrengthTemp}</li>
+                                    </ul>
+                                    <p><a href="${link}" target="_blank">Learn More</a></p>
+                                </div>
+                                <span class="read-more">Read More</span>
+                            `;
+
+                            // Add event listener for "Read More"
+                            const readMoreBtn = filamentDiv.querySelector('.read-more');
+                            const moreInfoDiv = filamentDiv.querySelector('.more-info');
+                            readMoreBtn.addEventListener('click', () => {
+                                if (moreInfoDiv.style.display === 'none') {
+                                    moreInfoDiv.style.display = 'block';
+                                    readMoreBtn.textContent = 'Read Less';
+                                } else {
+                                    moreInfoDiv.style.display = 'none';
+                                    readMoreBtn.textContent = 'Read More';
+                                }
+                            });
+
+                            container.appendChild(filamentDiv);
+                        });
+
+                        tiersContainer.appendChild(tierDiv);
+                    }
                 });
             } catch (error) {
                 console.error('Failed to load filaments:', error);
-                document.getElementById('filaments').innerHTML = `<p>Error loading filament data. Check console for details.</p>`;
+                document.getElementById('tiers').innerHTML = `<p>Error loading filaments. Please try again later.</p>`;
             }
         }
 
