@@ -304,7 +304,7 @@
         "description": "Nylon/PETG Alloys combine properties of nylon and PETG but inherit many of their weaknesses, such as warping.",
         "pros": "Improves PETG's strength.",
         "cons": "Tends to warp, not as strong as pure nylon.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1268",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1237",
         "printing_parameters": {
             "nozzle_temp": "240-260",
             "bed_temp": "70-90",
@@ -317,7 +317,7 @@
         "description": "Polycarbonate is very tough and stiff, with a glass-like sheen. It absorbs water quickly and is slow to print.",
         "pros": "Very tough, stiff, clear.",
         "cons": "Absorbs water quickly, slow to print, prints at very high temperatures.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1313",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1268",
         "printing_parameters": {
             "nozzle_temp": "260-300",
             "bed_temp": "100-120",
@@ -330,7 +330,7 @@
         "description": "CF Polycarbonate is extremely stiff and rough, making it suitable for high-strength applications.",
         "pros": "Extremely stiff, rough, affordable.",
         "cons": "Requires high-performance printer, abrasive.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1355",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1313",
         "printing_parameters": {
             "nozzle_temp": "270-300",
             "bed_temp": "100-120",
@@ -343,7 +343,7 @@
         "description": "PMMA is highly transparent and UV resistant, but it is brittle and absorbs water.",
         "pros": "Highly transparent, UV resistant, can be polished.",
         "cons": "Brittle, absorbs water, poor bed and layer adhesion.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1416",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1355",
         "printing_parameters": {
             "nozzle_temp": "230-250",
             "bed_temp": "80-100",
@@ -356,7 +356,7 @@
         "description": "PC-PBT is an alloy of polycarbonate and PBT, offering excellent surface quality and low warping.",
         "pros": "Excellent surface quality, low warping, durable in cold temperatures.",
         "cons": "Requires high-temperature printing, difficult to find.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1455",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1416",
         "printing_parameters": {
             "nozzle_temp": "250-270",
             "bed_temp": "90-110",
@@ -369,7 +369,7 @@
         "description": "Chocolate is the only printable and edible thermoplastic. It prints at very low temperatures.",
         "pros": "Edible, prints at low temperatures.",
         "cons": "Not suitable for structural parts.",
-        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1864",
+        "link": "https://www.youtube.com/watch?v=weeG9yOp3i4&t=1455",
         "printing_parameters": {
             "nozzle_temp": "28-32",
             "bed_temp": "Room temperature",
